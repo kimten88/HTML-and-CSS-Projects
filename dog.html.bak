@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	<a href="Assignment.html">HOME</a> |
+	<a href="dog.html">Dogs and Tea </a> |
+	<a href="Dog_Video.html">Dog and Cat Tea Commerial</a> 
+	
+	<br><br><br><br><br>
 		<title>Dogs</title>
 		<meta charset="utf-8">
 		<h1>Dogs and tea!
