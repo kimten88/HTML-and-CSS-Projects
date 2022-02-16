@@ -1,0 +1,10 @@
+p {
+	color: magenta;
+	background: aqua;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	text-shadow: 2px 2px #00FF00;
+}
