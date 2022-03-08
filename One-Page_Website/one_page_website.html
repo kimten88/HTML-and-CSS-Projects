@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title> Visit St Augustine </title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 	
@@ -35,8 +36,8 @@
 		
 			
 		<div>
-					<!-- PHOTO CONTAINER 1-->
-						<div>
+					 <!-- PHOTO CONTAINER 1-->
+						<!-- <div>
 							<div>
 								<img src="./Images/thumbnail_1.jpg" alt="Casa Monica Hotel">
 								<div>
@@ -45,9 +46,9 @@
 								</div>
 							</div>
 						</div>
-					<!-- END PHOTO CONTAINER -->
+					<-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 2-->
-						<div>
+						<!--<div>
 							<div>
 								<img src="./Images/thumbnail_2.jpg" alt="La Herencia Cafe">
 								<div>
@@ -55,10 +56,10 @@
 									<p>Casual Dinning: On beautiful Aviles street, authentic Cuban cusine</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 3-->
-						<div>
+						<!--<div>
 							<div>
 								<img src="./Images/thumbnail_3.jpg" alt="The Columbia Restaurant">
 								<div>
@@ -67,10 +68,10 @@
 									historic district</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 4-->
-						<div>
+						<!--<div>
 							<div>
 								<img src="./Images/thumbnail_4.jpg" alt="Ghost Tours">
 								<div>
@@ -79,9 +80,9 @@
 								</div>
 							</div>
 						</div>
-					<!-- END PHOTO CONTAINER -->
+					<-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 5-->
-						<div>
+						<!--<div>
 							<div>
 								<img src="./Images/thumbnail_5.jpg" alt="Old Town Tolly Tours">
 								<div>
@@ -89,10 +90,10 @@
 									<p>All day tours with stops all over the historic district</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 6-->
-						<div>
+					<!--	<div>
 							<div>
 								<img src="./Images/thumbnail_6.jpg" alt="Castillo de San Marcos">
 								<div>
@@ -101,10 +102,10 @@
 									which overlooks the Mantanzas bay.</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 7-->
-						<div>
+						<!--<div>
 							<div>
 								<img src="./Images/thumbnail_7.jpg" alt="Fountain of Youth">
 								<div>
@@ -113,10 +114,10 @@
 									landed in search of the fountain of youth</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 8-->
-						<div>
+					<!--	<div>
 							<div>
 								<img src="./Images/thumbnail_8.jpg" alt="Tini Martini Bar">
 								<div>
@@ -125,10 +126,10 @@
 									of the beautiful Casablanca Inn</p>
 								</div>
 							</div>
-						</div>
+						</div>-->
 					<!-- END PHOTO CONTAINER -->
 					<!-- PHOTO CONTAINER 9-->
-						<div>
+					<!--	<div>
 							<div>
 								<img src="./Images/thumbnail_9.jpg" alt="The Gifted Cork">
 								<div>
@@ -136,14 +137,154 @@
 									<p>The Gifted is a quaint wine shop with daily tastings and friendly staff.</p>
 								</div>
 							</div>
-						</div>
-					<!-- END PHOTO CONTAINER -->
+						</div> -->
+					<!-- END PHOTO CONTAINER --> -->
 				</div>
 			</div>
 		</section>
 		<!-- END GALLERY -->
 		
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./Images/thumbnail_1_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_2_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_3_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_4_small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_5_small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_6_small.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_7_small.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_8_small.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_9_small.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./Images/thumbnail_10_small.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+			</div>
+		</div>
 		
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 10</div>
+					<img src="./Images/thumbnail_1_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">2 / 10</div>
+					<img src="./Images/thumbnail_2 _wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">3 / 10</div>
+					<img src="./Images/thumbnail_3_wide.jpg" style="width:100%">
+				</div>
+		
+				<div class="mySlides">
+					<div class="numbertext">4 / 10</div>
+					<img src="./Images/thumbnail_4_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 10</div>
+					<img src="./Images/thumbnail_5_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 10</div>
+					<img src="./Images/thumbnail_6_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 10</div>
+					<img src="./Images/thumbnail_7_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 10</div>
+					<img src="./Images/thumbnail_8_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 10</div>
+					<img src="./Images/thumbnail_9_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">10 / 10</div>
+					<img src="./Images/thumbnail_10_wide.jpg" style="width:100%">
+				</div>
+		
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+		
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_1_small.jpg" onclick="currentSlide(1)" alt="Casa Monica Hotel">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_2_small.jpg" onclick="currentSlide(2)" alt="La Herencia Cafe">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_3_small.jpg" onclick="currentSlide(3)" alt="The Columbia Restaurant">
+				</div>
+		
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_4_small.jpg" onclick="currentSlide(4)" alt="Ghost Tours">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_5_small.jpg" onclick="currentSlide(5)" alt="Old Town Tolly Tours">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_6_small.jpg" onclick="currentSlide(6)" alt="Castillo de San Marcos">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_7_small.jpg" onclick="currentSlide(7)" alt="Fountain of Youth">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_8_small.jpg" onclick="currentSlide(8)" alt="Tini Martini Bar">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_9_small.jpg" onclick="currentSlide(9)" alt="The Gifted Cork">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/thumbnail_10_small.jpg" onclick="currentSlide(10)" alt="Flagler College">
+				</div>
+
+			</div>
+		</div>
 		
 		
 		<!-- RSVP -->
